@@ -196,3 +196,191 @@ footer {
     background-color: rgba(255, 255, 255, 0.95); /* 95%的白色，透出一点点底色 */
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);   /* 让阴影稍微明显一点，增加层次感 */
 }
+
+/* 顶部控制区（排序和当前标签提示） */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.filter-status {
+    font-weight: bold;
+    color: #0066cc;
+}
+
+.clear-filter {
+    cursor: pointer;
+    color: #e74c3c;
+    font-size: 0.9em;
+    margin-left: 10px;
+    text-decoration: underline;
+    display: none; /* 默认隐藏，有标签时显示 */
+}
+
+select {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+}
+
+/* 链接卡片网格 */
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.link-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.link-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+}
+
+.link-card h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.link-card h3 a:hover {
+    color: #0066cc;
+}
+
+.link-card p {
+    color: #666;
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin: 0 0 15px 0;
+    flex-grow: 1; /* 占据剩余空间，让底部的 tags 对齐 */
+}
+
+/* 标签样式 */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background-color: #eef2f5;
+    color: #556b8d;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.tag:hover {
+    background-color: #d5e1eb;
+    color: #0066cc;
+}
+
+/* 基础高亮样式：显著的边框和阴影 */
+.link-card.promoted {
+    border: 2px solid #ff9800; /* 亮橙色边框 */
+    background: linear-gradient(to bottom right, #ffffff, #fff9f0); /* 淡淡的底色 */
+    position: relative; /* 为以后加角标做准备 */
+    box-shadow: 0 10px 20px rgba(255, 152, 0, 0.15); /* 带有颜色的柔和阴影 */
+}
+
+/* 进阶：在右上角加一个“推荐”小字样（可选） */
+.link-card.promoted::before {
+    content: "精选推荐";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ff9800;
+    color: white;
+    font-size: 0.7em;
+    padding: 2px 8px;
+    border-radius: 0 8px 0 8px; /* 只圆角右上和左下 */
+    font-weight: bold;
+}
+
+/* 鼠标悬停在推荐卡片上时，阴影更深一点 */
+.link-card.promoted:hover {
+    box-shadow: 0 12px 25px rgba(255, 152, 0, 0.25);
+    transform: translateY(-5px);
+}
+
+/* ==========================================
+   新增：详情页动作按钮 (PDF 下载 / 网站跳转)
+   ========================================== */
+.action-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 鼠标悬停时的微上浮效果 */
+.action-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* PDF 下载按钮（红色系） */
+.pdf-btn {
+    background-color: #d9534f;
+    color: #ffffff !important; /* 加 !important 确保不被全局 a 标签颜色覆盖 */
+}
+.pdf-btn:hover {
+    background-color: #c9302c;
+}
+
+/* 外链跳转按钮（蓝色系） */
+.link-btn {
+    background-color: #0275d8;
+    color: #ffffff !important;
+}
+.link-btn:hover {
+    background-color: #025aa5;
+}
+
+/* ==========================================
+   新增：YouTube 内嵌视频响应式容器
+   ========================================== */
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 绝妙的比例：9除以16 = 56.25%，锁定 16:9 画幅 */
+    height: 0;
+    overflow: hidden;
+    margin-top: 20px;
+    border-radius: 8px; /* 圆角设计，显得更柔和高级 */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px; /* 强制 iframe 也有圆角 */
+}

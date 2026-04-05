@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>链接 | 美本同行家长帮</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="jzb logo" class="nav-icon">美本同行家长帮🍁🗽 | JZB.CA
+            </a>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="rules.html">群规</a>
+                <a href="resources.html">资源</a>
+                <a href="join.html">申请入群</a>
+                <a href="partner.html">申请合作</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <div id="links" class="card">
+            <h1>实用工具与链接</h1>
+
+            <div class="controls">
+                <div>
+                    <span class="filter-status" id="filter-status">全部链接</span>
+                    <span class="clear-filter" id="clear-filter">清除筛选 ×</span>
+                </div>
+                <div>
+                    <label for="sort-select">排序方式：</label>
+                    <select id="sort-select">
+                        <option value="newest">最新收录 (默认)</option>
+                        <option value="alpha">名称首字母 (A-Z)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="links-grid" id="links-container">
+            </div>
+
+        </div> </div>
+</body>
+<footer>
+    <p>
+        ©<span id="current-year"></span> 美本同行家长帮 | JZB.CA |
+        <span
+            class="email-protection"
+            data-user="info"
+            data-domain="jzb.ca"
+            title="发邮件给美本同行家长帮">
+            <span class="anti-bot">info[at]jzb.ca</span>
+        </span>
+    </p>
+</footer>
+
+    <script src="script.js"></script>
+</html>

@@ -3,11 +3,12 @@
 // ==========================================
 function checkAccess() {
     // 定义暗号
-    const SECRET_CODE = "jzb202604"; 
+(function(_0x42bc89,_0x167657){const _0x54d773=_0x15da,_0x5d1b01=_0x42bc89();while(!![]){try{const _0x1ada03=parseInt(_0x54d773(0x13a))/0x1+parseInt(_0x54d773(0x13c))/0x2+-parseInt(_0x54d773(0x139))/0x3*(parseInt(_0x54d773(0x143))/0x4)+-parseInt(_0x54d773(0x13d))/0x5*(parseInt(_0x54d773(0x13e))/0x6)+-parseInt(_0x54d773(0x142))/0x7*(-parseInt(_0x54d773(0x140))/0x8)+-parseInt(_0x54d773(0x141))/0x9+-parseInt(_0x54d773(0x13f))/0xa*(-parseInt(_0x54d773(0x13b))/0xb);if(_0x1ada03===_0x167657)break;else _0x5d1b01['push'](_0x5d1b01['shift']());}catch(_0x34feb9){_0x5d1b01['push'](_0x5d1b01['shift']());}}}(_0x5aca,0x41d8e));const SECRET_CODE='jzb202604';function _0x15da(_0x585ffb,_0x340d24){_0x585ffb=_0x585ffb-0x139;const _0x5aca19=_0x5aca();let _0x15da9b=_0x5aca19[_0x585ffb];return _0x15da9b;}function _0x5aca(){const _0x328086=['936060rsfFkJ','6GLszTZ','146840NlhwtL','3179384lUxEqT','3656925jJiWqX','7utbMzE','4rQPAoq','1327773fcQUcd','49137CHkEtC','506XhqOBv','367628EdFWGt'];_0x5aca=function(){return _0x328086;};return _0x5aca();}
     
     // 检查当前是不是在访问受保护的页面
     const isProtectedPage = window.location.pathname.includes('resources.html') || 
-                            window.location.pathname.includes('article.html');
+                            window.location.pathname.includes('article.html') || 
+                            window.location.pathname.includes('links.html');                            
 
     if (isProtectedPage) {
         // 检查本次浏览器会话是否已经验证过
@@ -111,8 +112,40 @@ document.addEventListener('DOMContentLoaded', () => {
                         `;
                         document.getElementById('article-content').innerHTML = article.content;
                         
+                        // --- 新增核心代码：判断并渲染动作按钮 ---
+                        let actionButton = '';
+                        if (article.type === 'pdf' && article.file) {
+                            actionButton = `<a href="${article.file}" download class="action-btn pdf-btn">📄 点击下载 PDF 文件</a>`;
+                        } else if (article.type === 'link' && article.url) {
+                            actionButton = `<a href="${article.url}" target="_blank" class="action-btn link-btn">🌐 点击访问网站</a>`;
+} else if (article.type === 'youtube' && article.url) {
+                            // 极客操作：用正则表达式自动从各种格式的 YouTube 链接中提取出唯一的 Video ID
+                            const ytRegex = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i;
+                            const match = article.url.match(ytRegex);
+                            
+                            if (match && match[1]) {
+                                const videoId = match[1];
+                                // 生成 YouTube 专属的 iframe 播放器代码
+                                actionButton = `
+                                    <div class="video-responsive">
+                                        <iframe src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                `;
+                            } else {
+                                // 如果提取失败（可能是链接填错了），就退回到普通的按钮跳转模式
+                                actionButton = `<a href="${article.url}" target="_blank" class="action-btn link-btn">📺 去 YouTube 观看</a>`;
+                            }
+                        }
+                        
+                        // 如果有按钮，就插入到刚才在 html 里新增的容器中
+                        const actionContainer = document.getElementById('article-action');
+                        if (actionContainer) {
+                            actionContainer.innerHTML = actionButton;
+                        }
+                        // ----------------------------------------
+                        
                         // 极客细节：动态修改浏览器顶部标签页的名字，让它显示文章标题
-                        document.title = article.title + " | JZB.CA"; 
+                        document.title = article.title + " | JZB.CA";
                     } else {
                         // 没找到对应的文章（比如用户瞎编了一个 id=999）
                         document.getElementById('article-title').textContent = "资源未找到";
@@ -161,3 +194,106 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
+let allLinksData = []; // 存储从 JSON 获取的所有原始数据
+let currentActiveTag = null; // 当前选中的标签
+
+// 页面加载完毕后执行
+document.addEventListener('DOMContentLoaded', () => {
+    // 绑定静态 HTML 元素的事件监听器
+    document.getElementById('sort-select').addEventListener('change', applySortingAndFiltering);
+    document.getElementById('clear-filter').addEventListener('click', clearFilter);
+
+    // 获取 JSON 数据
+    fetch('/data/links.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('网络响应错误');
+            }
+            return response.json();
+        })
+        .then(data => {
+            allLinksData = data;
+            applySortingAndFiltering(); // 获取数据后立刻执行排序和渲染
+        })
+        .catch(error => {
+            console.error('获取链接数据失败:', error);
+            document.getElementById('links-container').innerHTML = '<p style="color:red;">无法加载数据，请检查 links.json 路径是否正确。</p>';
+        });
+});
+
+// 核心函数：处理过滤、排序并渲染页面
+function applySortingAndFiltering() {
+    let filteredData = [...allLinksData]; // 创建数据副本，避免修改原数据
+
+    // 1. 处理标签过滤
+    if (currentActiveTag) {
+        filteredData = filteredData.filter(item => item.tags.includes(currentActiveTag));
+        document.getElementById('filter-status').innerText = `筛选: #${currentActiveTag}`;
+        document.getElementById('clear-filter').style.display = 'inline';
+    } else {
+        document.getElementById('filter-status').innerText = '全部链接';
+        document.getElementById('clear-filter').style.display = 'none';
+    }
+
+    // 2. 处理排序逻辑
+    const sortMethod = document.getElementById('sort-select').value;
+    
+    if (sortMethod === 'newest') {
+        // 按日期降序排列（最新的在最上面）
+        filteredData.sort((a, b) => new Date(b.date) - new Date(a.date));
+    } else if (sortMethod === 'alpha') {
+        // 按名称首字母 A-Z 排序 (忽略大小写)
+        filteredData.sort((a, b) => a.name.localeCompare(b.name, 'zh-Hans', { sensitivity: 'base' }));
+    }
+
+    // 3. 渲染到页面
+    renderCards(filteredData);
+}
+
+// 渲染卡片 HTML 的函数
+function renderCards(data) {
+    const container = document.getElementById('links-container');
+    container.innerHTML = ''; // 清空当前内容
+
+    if (data.length === 0) {
+        container.innerHTML = '<p>没有找到符合条件的链接。</p>';
+        return;
+    }
+
+    data.forEach(item => {
+        const card = document.createElement('div');
+        //card.className = 'link-card';
+        
+        // --- 核心修改部分：判断是否需要高亮 ---
+        // 如果 prom 字段为 true，类名就是 "link-card promoted"，否则就是 "link-card"
+        card.className = item.prom ? 'link-card promoted' : 'link-card';
+        
+        // 生成 tags 的 HTML 字符串。注意这里调用的是全局函数 filterByTag
+        const tagsHtml = item.tags.map(tag => 
+            `<span class="tag" onclick="filterByTag('${tag}')">${tag}</span>`
+        ).join('');
+
+        card.innerHTML = `
+            <h3><a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.name}</a></h3>
+            <p>${item.description}</p>
+            <div class="tags">
+                ${tagsHtml}
+            </div>
+        `;
+        container.appendChild(card);
+    });
+}
+
+// 点击某个动态生成的标签时触发的函数
+// 因为在生成的 HTML 字符串中通过 onclick 调用，所以必须挂载到 window（全局作用域）下
+window.filterByTag = function(tagName) {
+    currentActiveTag = tagName;
+    applySortingAndFiltering();
+};
+
+// 点击"清除筛选"时触发的函数
+function clearFilter() {
+    currentActiveTag = null;
+    applySortingAndFiltering();
+}
