@@ -1,16 +1,29 @@
 [
     {
         "id": 1,
-        "date": "2026-03-29",
-        "category": "规划时间轴",
-        "title": "📌 11年级春季至早申核心规划轴",
-        "content": "美本申请是一场马拉松，11年级下半学期至暑假是拉开差距的“超车期”...（此处省略正文，把之前的时间轴文本放这里，可以用 <br> 换行）"
+        "date": "2026-04-05",
+        "category": "升学规划",
+        "title": "🔥 NACAC College Admission Process",
+        "content": "说到美本申请的权威性与全面性，目前市面上几乎没有资料能超越 NACAC（美国大学招生咨询协会）官方出品的这份指导手册。强烈建议各位家长——尤其是刚开始规划、尚在摸索阶段的新手家长——将其作为**‘官方教科书’**通读一遍，绝对能少走很多弯路，迅速建立起正确的升学认知体系。",
+        "file": "/data/media/NACAC_College_Admission_Process.pdf",
+        "type": "pdf"
     },
     {
         "id": 2,
         "date": "2026-04-05",
-        "category": "夏校申请",
-        "title": "🔥 顶尖理工科夏校备考指南",
-        "content": "如果目标是普林斯顿等顶尖名校的理工科，高含金量的夏校是极其关键的一环。今天和大家分享一下关于..."
-    }
+        "category": "升学工具",
+        "title": "🎯 超好用的在线 GPA 计算器 (GPA Calculator)",
+        "content": "在美本申请中，GPA 是评估学术水平的核心指标。对于我们目前使用百分制的高中成绩体系来说，如何准确换算成美国大学常用的4.0标度经常让人头疼。强烈推荐这个简单易用的在线 GPA 计算器，不仅支持不同分数体系的快速转换，还能轻松计算加权（Weighted）和非加权（Unweighted）GPA，是前期规划和匹配选校时必不可少的辅助工具。这个网站上还包含了跟GPA计算相关的一切知识。",
+        "url": "https://gpacalculator.net",
+        "type": "link"
+    },
+    {
+        "id": 3,
+        "date": "2026-04-05",
+        "category": "升学工具",
+        "title": "🎯 Common App填写指南",
+        "content": "这个视频手把手教你如何填写Common App，并告诉你要避坑的地方。",
+        "url": "https://www.youtube.com/watch?v=uV81sGa9ZVY",
+        "type": "youtube"
+    }  
 ]

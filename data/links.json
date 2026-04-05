@@ -1,0 +1,692 @@
+[
+  {
+    "name": "EdJourney",
+    "url": "https://www.kyros.ai/rd/c/d5ce2y",
+    "description": "AI驱动的美本申请规划与选校、选专业工具，提供个性化申请策略，内置涵盖夏校、课外活动与文书案例的海量资料库。",
+    "tags": [
+      "升学工具",
+      "升学规划",
+      "常用链接",
+      "精选推荐",
+      "升学机构",
+      "选校参考"
+    ],
+    "date": "2026-04-03",
+    "prom": true
+  },
+  {
+    "name": "Common App",
+    "url": "https://www.commonapp.org/",
+    "description": "美国大学本科申请最主要的通用系统。",
+    "tags": [
+      "申请系统",
+      "官方平台",
+      "常用链接"
+    ],
+    "date": "2026-04-03",
+    "prom": false
+  },
+  {
+    "name": "College Board",
+    "url": "https://www.collegeboard.org/",
+    "description": "管理 SAT 考试和 AP 课程的官方网站，也可用于查询大学信息。",
+    "tags": [
+      "标化考试",
+      "官方平台",
+      "常用链接"
+    ],
+    "date": "22026-04-03"
+  },
+  {
+    "name": "Niche",
+    "url": "https://www.niche.com/",
+    "description": "提供基于学生和家长评价的美国大学、高中排名及深度评测。",
+    "tags": [
+      "大学排名",
+      "选校参考",
+      "常用链接"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "New York Times - College and University Admissions",
+    "url": "https://www.nytimes.com/topic/subject/college-and-university-admissions",
+    "description": "纽约时报关于大学招生、教育趋势与深度报道的专栏文章。",
+    "tags": [
+      "升学资讯"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "School List Map View",
+    "url": "https://www.google.com/maps/d/u/1/edit?mid=11JOrHBwqJsjUU-cKo93ipRF-O01ezbQ&usp",
+    "description": "View schools on the Google Map.",
+    "tags": [
+      "选校参考"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "School Database",
+    "url": "https://docs.google.com/spreadsheets/d/1wtG2IEgv9bpKZUOV7G93mrceRZ6EQYXUnodjjQl446I/edit?gid=1736145272#gid=1736145272",
+    "description": "学校数据统计表格，包含学校排名、录取信息、奖学金信息等。",
+    "tags": [
+      "选校参考",
+      "大学排名"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "Global College Index (US/UK/Canada)",
+    "url": "https://docs.google.com/spreadsheets/d/1PoAPC9RyYOESfG0Mzr_VeE0SIrsEiTP_LZIVs6jDGpw/edit?gid=0#gid=0",
+    "description": "美、加、英大学名录与基本信息",
+    "tags": [
+      "选校参考"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "Top 150 US News Rankings (1984-2025)",
+    "url": "https://docs.google.com/spreadsheets/d/1M4vUsgTjxcByWykChMz6tavHCKCOoSK4i1y12zK0wbo/edit?usp=sharing",
+    "description": "美本综合大学Top150的历年US News排名。",
+    "tags": [
+      "选校参考",
+      "大学排名"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "LAC US News Rankings (1984-2025)",
+    "url": "https://docs.google.com/spreadsheets/d/1j0dbCtZdOTldH5kcEbK6uSug162o8mrrNTxEB7LxZuk/edit?usp=sharing",
+    "description": "美本文理学院的历年US News排名。",
+    "tags": [
+      "选校参考",
+      "大学排名"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "LAC US News Rankings (2022)",
+    "url": "https://docs.google.com/spreadsheets/d/1KaA2yiAxqGvo3RsMdPsmnEw5j55jtSo2z_fpShG9RvI/edit?usp=sharing",
+    "description": "美本文理学院的2022年US News排名及学校录取信息等。",
+    "tags": [
+      "选校参考",
+      "大学排名"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "ApplyingToCollege (Reddit A2C)",
+    "url": "https://www.reddit.com/r/ApplyingToCollege",
+    "description": "红迪大学申请交流论坛，经验分享。",
+    "tags": [
+      "选校参考",
+      "常用链接"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "College Confidential",
+    "url": "https://collegeconfidential.com",
+    "description": "大学申请交流论坛，经验分享。",
+    "tags": [
+      "选校参考",
+      "常用链接"
+    ],
+    "date": "2026-04-03"
+  },
+    {
+    "name": "Quora College Admissions",
+    "url": "https://collegeconfidential.com",
+    "description": "美版知乎上的大学申请讨论区。",
+    "tags": [
+      "选校参考"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "Education USA Canada",
+    "url": "https://www.educationusacanada.ca",
+    "description": "美国国务院下属的官方教育网络，为加拿大国际学生提供最权威、全面的美国高等教育与留学资讯。",
+    "tags": [
+      "升学资讯",
+      "奖助学金"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "Big Future by College Board",
+    "url": "https://bigfuture.collegeboard.org",
+    "description": "College Board 旗下的官方权威大学搜索引擎与财务规划辅助工具。",
+    "tags": [
+      "升学规划",
+      "升学工具",
+      "奖助学金",
+      "财务规划",
+      "常用链接"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "Appily - Chance Me",
+    "url": "https://www.appily.com/college-chances-calculator",
+    "description": "由老牌选校网站 Cappex 升级而来的综合升学平台，提供强大的大学检索、录取概率测算、海量奖学金匹配及录取概率的评估。",
+    "tags": [
+      "选校参考",
+      "升学工具",
+      "常用链接"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "NCES - IPEDS - College Navigator",
+    "url": "https://www.appily.com/college-chances-calculator",
+    "description": "美国国家教育统计中心（National Center for Education Statistics）提供的强大的大学统计数据库，包括各种大学检索工具（如College Navigator，College Map, College Compare）。",
+    "tags": [
+      "选校参考",
+      "升学工具",
+      "常用链接"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "National Association for College Admission Counseling (NACAC)",
+    "url": "https://www.nacacnet.org",
+    "description": "美国大学招生咨询协会官网，包括各种参考资料，如College Admission Process。",
+    "tags": [
+      "选校参考",
+      "官方平台",
+      "常用链接"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "Better College Apps",
+    "url": "https://bettercollegeapps.com",
+    "description": "由红迪社区知名专家ScholarGrade创立的升学咨询机构，以硬核、深度的申请策略指南和专业的文书精修服务见长。",
+    "tags": [
+      "升学规划",
+      "升学机构"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "The Admissions Angel",
+    "url": "https://www.theadmissionsangle.com",
+    "description": "提供个性化美本选校、文书指导、考培与长期学术规划的专业顾问团队。",
+    "tags": [
+      "升学机构"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "Big Green College Prep",
+    "url": "https://www.biggreencollegeprep.com",
+    "description": "位于康州南部、紧邻耶鲁大学的小型高端升学咨询公司。",
+    "tags": [
+      "升学机构"
+    ],
+    "date": "2026-04-03"
+  },
+    {
+    "name": "Crimson Education",
+    "url": "https://www.crimsoneducation.org",
+    "description": "提供美本升学规划的综合性咨询机构。",
+    "tags": [
+      "升学机构"
+    ],
+    "date": "2026-04-03"
+  },
+    {
+    "name": "InGenius Prep | 引知",
+    "url": "https://ingeniusprep.com",
+    "description": "提供美本升学规划的综合性咨询机构。",
+    "tags": [
+      "升学机构"
+    ],
+    "date": "2026-04-03"
+  },
+    {
+    "name": "Palm Drive | 棕榈大道",
+    "url": "https://palmdrive.cn",
+    "description": "提供美本升学规划的综合性咨询机构。",
+    "tags": [
+      "升学机构"
+    ],
+    "date": "2026-04-03"
+  },
+    {
+    "name": "Stoooges Education | 三士渡",
+    "url": "https://stoooges.com",
+    "description": "提供美本升学规划的综合性咨询机构。",
+    "tags": [
+      "升学机构"
+    ],
+    "date": "2026-04-03"
+  },
+    {
+    "name": "Enlighteens | 引青教育",
+    "url": "https://www.enlighteens.com/",
+    "description": "提供美本升学规划的综合性咨询机构。",
+    "tags": [
+      "升学机构"
+    ],
+    "date": "2026-04-03"
+  },
+    {
+    "name": "Whole Ren",
+    "url": "https://www.wholeren.com",
+    "description": "提供美本升学规划的综合性咨询机构。",
+    "tags": [
+      "升学机构"
+    ],
+    "date": "2026-04-03"
+  },
+    {
+    "name": "Edward Huang",
+    "url": "https://talenthotbed.com",
+    "description": "提供美本升学规划的顾问。",
+    "tags": [
+      "升学顾问"
+    ],
+    "date": "2026-04-03"
+  },
+    {
+    "name": "Xiaofeng Wan",
+    "url": "https://www.wancollegeconsulting.com",
+    "description": "提供美本升学规划的顾问。",
+    "tags": [
+      "升学顾问"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "Need-Blind University List",
+    "url": "https://borderless.so/blog/need-blind-universities-for-international-students",
+    "description": "对国际学生录取时不考虑经济状况(Need-Blind)，并提供全额奖助学金的大学名录。",
+    "tags": [
+      "奖助学金"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "Meet-Full-Need University List",
+    "url": "https://www.crimsoneducation.org/us/blog/financial-aid-international-students",
+    "description": "满足国际学生100%资金需求 (Meet Full Need) 的大学名录。",
+    "tags": [
+      "奖助学金"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "Raise Me",
+    "url": "https://www.raise.me/",
+    "description": "通过高中日常成绩与课外活动，提前积累目标大学‘微型奖学金’的创新财务平台。",
+    "tags": [
+      "奖助学金"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "Your College Concierge",
+    "url": "https://yourcollegeconcierge.com",
+    "description": "专注美本录取与奖助学金申请的资深美本升学咨询机构。",
+    "tags": [
+      "财务规划",
+      "奖助学金",
+      "升学机构"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "College Beyond",
+    "url": "https://collegeandbeyondllc.com/",
+    "description": "提供全方位升学指导与财务规划的升学咨询机构。",
+    "tags": [
+      "财务规划",
+      "奖助学金",
+      "升学机构"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "Common Sense",
+    "url": "https://www.commonsense.org",
+    "description": "提供海量电影、图书、App 等媒体的适龄评级与青少年数字素养教育资源的权威平台。",
+    "tags": [
+      "教育资源"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "College Unmazed",
+    "url": "https://www.collegeunmazed.com",
+    "description": "通过结构化的规划教材与真实数据分析，帮助高中家庭消除升学焦虑，做出理性的选校与职业决策。",
+    "tags": [
+      "升学工具",
+      "升学机构"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "Borderless Admission Services and Tools",
+    "url": "https://borderless.so",
+    "description": "专注国际学生的美本升学互助平台，涵盖成功案例库、申请时间线与选校/奖学金辅助系统。",
+    "tags": [
+      "升学工具",
+      "升学规划",
+      "奖助学金"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "College Vine",
+    "url": "https://www.collegevine.com",
+    "description": "提供智能录取概率评估、选校搜索引擎与免费文书互改社区的综合美本辅导平台。",
+    "tags": [
+      "升学工具",
+      "升学规划",
+      "常用链接"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "Apply Genius (iPhone App)",
+    "url": "https://www.getapplygenius.com/",
+    "description": "美本申请AI辅助工具。",
+    "tags": [
+      "升学工具"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "U.S. News & World Report Rankings",
+    "url": "https://www.usnews.com/best-colleges",
+    "description": "最具权威性的美国大学排名系统，提供多维度的学校评估与选校参考。",
+    "tags": [
+      "大学排名",
+      "选校参考",
+      "常用链接"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "QS World University Rankings",
+    "url": "https://www.topuniversities.com/qs-world-university-rankings",
+    "description": "提供美国大学的综合排名、专业评估与选校参考信息。",
+    "tags": [
+      "大学排名",
+      "选校参考"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "Times Higher Education (THE) World University Rankings",
+    "url": "https://www.timeshighereducation.com/world-university-rankings",
+    "description": "提供美国大学的综合排名、专业评估与选校参考信息。",
+    "tags": [
+      "大学排名",
+      "选校参考"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "Forbes America's Top Colleges",
+    "url": "https://www.forbes.com/top-colleges",
+    "description": "提供美国大学的综合排名、专业评估与选校参考信息。",
+    "tags": [
+      "大学排名",
+      "选校参考"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "The Princeton Review College Rankings",
+    "url": "https://www.princetonreview.com/college-education",
+    "description": "提供美国大学的综合排名、专业评估与选校参考信息。",
+    "tags": [
+      "大学排名",
+      "选校参考"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "Money's Best Colleges",
+    "url": "https://money.com/best-colleges",
+    "description": "提供美国大学的综合排名、专业评估与选校参考信息。",
+    "tags": [
+      "大学排名",
+      "选校参考"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "Washington Monthly - College Guide",
+    "url": "https://washingtonmonthly.com",
+    "description": "提供美国大学的综合排名、专业评估与选校参考信息。",
+    "tags": [
+      "大学排名",
+      "选校参考"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "The Wall Street Journal - Best Colleges",
+    "url": "https://www.wsj.com/rankings/college-rankings/best-colleges-2025",
+    "description": "华尔街日报发布的美国大学排名及教育相关报道。",
+    "tags": [
+      "大学排名",
+      "选校参考"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "The New York Times - Build Your Own College Rankings",
+    "url": "https://www.nytimes.com/interactive/2023/opinion/build-your-own-college-rankings.html",
+    "description": "纽约时报定制化的美国大学排名。",
+    "tags": [
+      "大学排名",
+      "选校参考"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "Best Colleges",
+    "url": "https://www.bestcolleges.com/",
+    "description": "提提供多维度细分大学排名、深度专业解析与实用选校指南的综合性高等教育资讯平台。",
+    "tags": [
+      "大学排名",
+      "选校参考"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "Ontario Universities' Application Centre",
+    "url": "https://www.ouac.on.ca/",
+    "description": "加拿大安大略省大学官方统一申请平台（OUAC），安省高中生申请省内大学的必经系统。",
+    "tags": [
+      "申请系统",
+      "选校参考",
+      "加国大学"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "Ontario Universities Events",
+    "url": "https://www.ouevents.ca",
+    "description": "深安大略省大学官方招生展会与活动资讯平台，提供年度最大的安省大学展（OUF）及各类线上宣讲会信息。",
+    "tags": [
+      "升学资讯",
+      "加国大学"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "Ontario Universities Info",
+    "url": "https://www.ouinfo.ca/",
+    "description": "安大略省大学官方本科专业检索与选校指南，提供最权威的录取要求、前置课程与奖学金信息。",
+    "tags": [
+      "加国大学",
+      "选校参考"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "MaClean Canada University Rankings",
+    "url": "https://education.macleans.ca/",
+    "description": "加拿大最具权威性的《麦考林杂志》(Maclean's) 教育频道，发布年度加拿大大学综合排名、专业评测与学生满意度调查。",
+    "tags": [
+      "加国大学",
+      "选校参考",
+      "大学排名"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "Universities Canada",
+    "url": "https://univcan.ca",
+    "description": "‘加拿大大学协会’官方网站，提供权威的加拿大全国大学院校概况、跨省专业项目检索以及官方奖学金资源库。",
+    "tags": [
+      "加国大学",
+      "选校参考",
+      "奖助学金"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "EducationPlanner BC",
+    "url": "https://www.educationplannerbc.ca/",
+    "description": "加拿大BC省官方统一的大学申请与规划平台，是申请UBC、SFU等该省名校的必经通道。",
+    "tags": [
+      "加国大学",
+      "申请系统",
+      "升学规划",
+      "官方平台"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "Alberta Education Planner",
+    "url": "https://alis.alberta.ca/explore-education-and-training/",
+    "description": "加拿大阿尔伯塔省官方的升学与职业规划门户，提供详尽的省内大学专业检索、学业规划及权威的就业前景指导。",
+    "tags": [
+      "加国大学",
+      "升学规划",
+      "选校参考",
+      "官方平台"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "Apply Alberta",
+    "url": "https://prod.applyalberta.ca",
+    "description": "加拿大阿尔伯塔省官方统一的大学申请平台，是申请阿尔伯塔大学、卡尔加里大学等该省名校的必经通道。",
+    "tags": [
+      "加国大学",
+      "申请系统",
+      "官方平台"
+    ],
+    "date": "2026-04-03"
+  },  
+  {
+    "name": "UN Volunteers",
+    "url": "https://app.unv.org/?language=LAN_ENG",
+    "description": "联合国志愿人员（UNV）官方统一平台，提供极具含金量的全球实地与远程在线志愿服务（Online Volunteering）机会及认证。",
+    "tags": [
+      "志愿服务",
+      "课外活动",
+      "常用链接"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "College Transitions - Top Feeders to Medical School",
+    "url": "https://www.collegetransitions.com/dataverse/top-feeders-medical-school",
+    "description": "基于真实录取数据盘点的全美医学院顶尖本科‘生源校’榜单，是目标 Pre-Med（医学预科）路线家庭的核心选校参考。",
+    "tags": [
+      "选校参考",
+      "大学排名",
+      "升学机构",
+      "升学工具"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "Former Yale admissions officer reveals secrets of who gets in",
+    "url": "https://nypost.com/2016/02/07/former-yale-admissions-officer-reveals-secrets-of-who-gets-in/",
+    "description": "前耶鲁大学招生官揭秘录取内幕。",
+    "tags": [
+      "阅读参考",
+      "升学规划"
+    ],
+    "date": "2026-04-02"
+  },
+  {
+    "name": "Double Degree Dilemma",
+    "url": "https://talk.collegeconfidential.com/t/double-degree-dilemma-reposted/3663275",
+    "description": "美国大学申请论坛（College Confidential）音乐专业版块中最著名、被奉为经典的置顶必读长文《双学位的困境》，由约翰斯·霍普金斯大学皮博迪音乐学院（Peabody Conservatory）前招生主任David Lane撰写。",
+    "tags": [
+      "阅读参考",
+      "升学规划"
+    ],
+    "date": "2026-04-02"
+  },
+  {
+    "name": "Guide to EA, REA, ED and RD",
+    "url": "https://lugordon.notion.site/Our-Guide-to-EA-REA-ED-and-Regular-Decision-Admissions-fde91bf2afe24b5ab51bca89c4287a04",
+    "description": "关于美国大学申请中不同录取批次（EA, REA, ED, 和常规申请 RD）的详细指南和策略框架。",
+    "tags": [
+      "阅读参考",
+      "升学规划" 
+    ],
+    "date": "2026-04-02"
+  },
+  {
+    "name": "Detailed Explanation on Common App Application Form",
+    "url": "https://lugordon.notion.site/Common-App-Honor-Award-fad352596ee0498692b82d3737b39879",
+    "description": "Common App 填写指南 - Honor/Award 部分",
+    "tags": [
+      "阅读参考",
+      "升学规划"
+    ],
+    "date": "2026-04-02"
+  },
+  {
+    "name": "GPA Calculator",
+    "url": "https://gpacalculator.net",
+    "description": "GPA计算工具及相关知识。",
+    "tags": [
+      "升学工具",
+      "常用链接"
+    ],
+    "date": "2026-04-03"
+  },
+    {
+    "name": "GPA Calculator for the University of California",
+    "url": "https://rogerhub.com/gpa-calculator-uc",
+    "description": "加州大学系统GPA计算工具。",
+    "tags": [
+      "升学工具"
+    ],
+    "date": "2026-04-03"
+  },
+    {
+    "name": "GPA Calculator for the University of California",
+    "url": "https://www.wholeren.com",
+    "description": "加州大学系统GPA计算工具。",
+    "tags": [
+      "升学工具"
+    ],
+    "date": "2026-04-03"
+  },
+  {
+    "name": "Safety, Target & Reach Schools: How to Find the Right Ones",
+    "url": "https://blog.collegevine.com/the-college-list-decoded-safeties-targets-and-reaches",
+    "description": "目标学校选择的指导文章。",
+    "tags": [
+      "阅读参考",
+      "升学规划"
+    ],
+    "date": "2026-04-02"
+  }
+]
