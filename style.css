@@ -384,3 +384,28 @@ select {
     border: none;
     border-radius: 8px; /* 强制 iframe 也有圆角 */
 }
+
+/* ==========================================
+   网站访问量计数器 (Statcounter) 美化
+   ========================================== */
+.statcounter-wrapper {
+    text-align: center;         /* 绝对居中对齐 */
+    margin-top: 20px;           /* 距离上方的文字留出一点呼吸空间 */
+    margin-bottom: 20px;        /* 距离底部留出空间 */
+    opacity: 0.6;               /* 核心技巧：降低60%透明度，让它融入背景不刺眼 */
+    transition: opacity 0.3s ease; /* 添加一个平滑的过渡动画 */
+}
+
+/* 交互细节：当鼠标悬停在计数器上时，恢复100%的亮度 */
+.statcounter-wrapper:hover {
+    opacity: 1;
+}
+
+/* 针对 Statcounter 图标的微调 */
+.statcounter-wrapper img {
+    vertical-align: middle;
+    border-radius: 4px;         /* 给那个方方正正的小图片加一点微小的圆角，更现代 */
+    
+    /* 进阶选项：如果绿色的字太花哨，可以取消下面这行代码的注释，把它变成高级的黑白色 */
+    filter: grayscale(100%);
+}
