@@ -25,5 +25,15 @@
         "content": "这个视频手把手教你如何填写Common App，并告诉你要避坑的地方。",
         "url": "https://www.youtube.com/watch?v=uV81sGa9ZVY",
         "type": "youtube"
-    }  
+    },
+    {
+        "id": 4,
+        "date": "2026-04-11",
+        "category": "升学工具",
+        "title": "🎯 EdJourney Demo：一款AI驱动的美本升学规划工具",
+        "content": "Demo演示EdJourney的操作使用，以及这款工具及平台资源在升学规划中实际应用场景。",
+        "url": "https://www.youtube.com/watch?v=ttay5c11S6s",
+        "type": "youtube"
+    },
+    
 ]
