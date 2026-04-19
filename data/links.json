@@ -740,5 +740,16 @@
       "升学机构"
     ],
     "date": "2026-04-16"
-  }  
+  },
+  {
+    "name": "College Board",
+    "url": "https://www.collegeboard.org/",
+    "description": "管理 SAT 考试和 AP 课程的官方网站，也可用于查询大学信息。",
+    "tags": [
+      "标化考试",
+      "官方平台",
+      "常用链接"
+    ],
+    "date": "22026-04-05"
+  }
 ]
