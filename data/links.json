@@ -688,5 +688,69 @@
       "升学规划"
     ],
     "date": "2026-04-02"
-  }
+  },
+    {
+    "name": "Elevated School",
+    "url": "https://www.elevated.school",
+    "description": "提供美本升学规划的综合性咨询机构。",
+    "tags": [
+      "升学机构"
+    ],
+    "date": "2026-04-16"
+  },
+    {
+    "name": "Essay Brainstorming Tool",
+    "url": "https://www.elevated.school/essay-brainstorming-tool",
+    "description": "文书写作辅助工具。",
+    "tags": [
+      "升学工具"
+    ],
+    "date": "2026-04-16"
+  },
+    {
+    "name": "Chance Me Tool",
+    "url": "https://www.elevated.school/chanceme",
+    "description": "录取几率评估。",
+    "tags": [
+      "升学工具"
+    ],
+    "date": "2026-04-16"
+  },
+    {
+    "name": "Chance Me Tool",
+    "url": "https://www.elevated.school/chanceme",
+    "description": "录取几率评估。",
+    "tags": [
+      "升学工具"
+    ],
+    "date": "2026-04-16"
+  },
+    {
+    "name": "Edit My Essay",
+    "url": "https://www.elevated.school/editmyessay/readme",
+    "description": "文书修改服务。",
+    "tags": [
+      "升学工具"
+    ],
+    "date": "2026-04-16"
+  },
+    {
+    "name": "UStrive - Free Online College Application Mentoring Service",
+    "url": "https://ustrive.com",
+    "description": "免费的大学申请在线咨询服务。",
+    "tags": [
+      "升学机构"
+    ],
+    "date": "2026-04-16"
+  },
+    {
+    "name": "Matriculate - Free Online College Application Mentoring Service",
+    "url": "https://matriculate.org",
+    "description": "免费的大学申请在线咨询服务。",
+    "tags": [
+      "升学机构"
+    ],
+    "date": "2026-04-16"
+  },
+  
 ]
