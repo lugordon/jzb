@@ -27,17 +27,6 @@
     "prom": false
   },
   {
-    "name": "College Board",
-    "url": "https://www.collegeboard.org/",
-    "description": "管理 SAT 考试和 AP 课程的官方网站，也可用于查询大学信息。",
-    "tags": [
-      "标化考试",
-      "官方平台",
-      "常用链接"
-    ],
-    "date": "22026-04-02"
-  },
-  {
     "name": "Niche",
     "url": "https://www.niche.com/",
     "description": "提供基于学生和家长评价的美国大学、高中排名及深度评测。",
