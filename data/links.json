@@ -15,6 +15,18 @@
     "prom": true
   },
   {
+    "name": "Kyros",
+    "url": "https://www.kyros.ai",
+    "description": "美本申请机构。",
+    "tags": [
+      "升学工具",
+      "升学规划",
+      "升学机构"
+    ],
+    "date": "2026-04-03",
+    "prom": true
+  },
+  {
     "name": "Common App",
     "url": "https://www.commonapp.org/",
     "description": "美国大学本科申请最主要的通用系统。",
