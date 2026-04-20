@@ -148,9 +148,6 @@ else if (article.type === 'image') {
                                 `;
                             }
                         }
-
-                        // 最后把生成的动作按钮/图片/视频拼接到文章正文的下方
-                        document.getElementById('article-content').innerHTML += actionButton;
                         
                         // 如果有按钮，就插入到刚才在 html 里新增的容器中
                         const actionContainer = document.getElementById('article-action');
