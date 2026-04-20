@@ -136,14 +136,31 @@ document.addEventListener('DOMContentLoaded', () => {
                                 actionButton = `<a href="${article.url}" target="_blank" class="action-btn link-btn">📺 去 YouTube 观看</a>`;
                             }
                         }
-// --- 前面的 pdf, link, youtube 判断逻辑保留 ---
-                        // ...
+
+// --- 新增核心代码：判断并渲染动作按钮 ---
+                        let actionButton = '';
+                        if (article.type === 'pdf' && article.file) {
+                            actionButton = `<a href="${article.file}" download class="action-btn pdf-btn">📄 点击下载 PDF 文件</a>`;
+                        } else if (article.type === 'link' && article.url) {
+                            actionButton = `<a href="${article.url}" target="_blank" class="action-btn link-btn">🌐 点击访问网站</a>`;
                         } else if (article.type === 'youtube' && article.url) {
-                            // ... 这里是你原本写的一大串 youtube 提取逻辑 ...
-                            // ...
-                        } 
-                        // 👇👇👇 从这里开始新增 👇👇👇
-                        else if (article.type === 'image') {
+                            // 极客操作：用正则表达式自动从各种格式的 YouTube 链接中提取出唯一的 Video ID
+                            const ytRegex = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i;
+                            const match = article.url.match(ytRegex);
+                            
+                            if (match && match[1]) {
+                                const videoId = match[1];
+                                // 生成 YouTube 专属的 iframe 播放器代码
+                                actionButton = `
+                                    <div class="video-responsive">
+                                        <iframe src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                `;
+                            } else {
+                                // 如果提取失败（可能是链接填错了），就退回到普通的按钮跳转模式
+                                actionButton = `<a href="${article.url}" target="_blank" class="action-btn link-btn">📺 去 YouTube 观看</a>`;
+                            }
+                        } else if (article.type === 'image') {
                             // 兼容处理：无论你在 json 里写的是 url 还是 file，都能正确读取
                             const imgPath = article.url || article.file;
                             if (imgPath) {
@@ -154,12 +171,13 @@ document.addEventListener('DOMContentLoaded', () => {
                                 `;
                             }
                         }
-                        // 👆👆👆 新增结束 👆👆👆
 
                         // 最后把生成的动作按钮/图片/视频拼接到文章正文的下方
-                        document.getElementById('article-content').innerHTML += actionButton                        
+                        document.getElementById('article-content').innerHTML += actionButton;
+                        
                         // 如果有按钮，就插入到刚才在 html 里新增的容器中
                         const actionContainer = document.getElementById('article-action');
+                        
                         if (actionContainer) {
                             actionContainer.innerHTML = actionButton;
                         }
