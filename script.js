@@ -136,7 +136,28 @@ document.addEventListener('DOMContentLoaded', () => {
                                 actionButton = `<a href="${article.url}" target="_blank" class="action-btn link-btn">📺 去 YouTube 观看</a>`;
                             }
                         }
-                        
+// --- 前面的 pdf, link, youtube 判断逻辑保留 ---
+                        // ...
+                        } else if (article.type === 'youtube' && article.url) {
+                            // ... 这里是你原本写的一大串 youtube 提取逻辑 ...
+                            // ...
+                        } 
+                        // 👇👇👇 从这里开始新增 👇👇👇
+                        else if (article.type === 'image') {
+                            // 兼容处理：无论你在 json 里写的是 url 还是 file，都能正确读取
+                            const imgPath = article.url || article.file;
+                            if (imgPath) {
+                                actionButton = `
+                                    <div class="image-responsive">
+                                        <img src="${imgPath}" alt="${article.title}" class="article-image">
+                                    </div>
+                                `;
+                            }
+                        }
+                        // 👆👆👆 新增结束 👆👆👆
+
+                        // 最后把生成的动作按钮/图片/视频拼接到文章正文的下方
+                        document.getElementById('article-content').innerHTML += actionButton                        
                         // 如果有按钮，就插入到刚才在 html 里新增的容器中
                         const actionContainer = document.getElementById('article-action');
                         if (actionContainer) {
