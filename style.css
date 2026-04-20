@@ -413,3 +413,19 @@ select {
     color: inherit;
     margin: 0 4px;
 }
+
+/* ==========================================
+   新增：文章内嵌图片响应式样式
+   ========================================== */
+.image-responsive {
+    margin-top: 20px;
+    text-align: center; /* 让图片在容器中居中 */
+}
+
+.article-image {
+    max-width: 100%;      /* 保证图片在手机屏幕上不会撑爆屏幕 */
+    height: auto;         /* 保持原始比例 */
+    border-radius: 8px;   /* 和 YouTube 视频保持统一的圆角风格 */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* 轻微的阴影让图片更有立体高级感 */
+    transition: transform 0.3s ease; /* 可选：为以后做点击放大预留的动画过渡 */
+}
