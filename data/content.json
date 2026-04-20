@@ -32,8 +32,8 @@
         "category": "升学工具",
         "title": "🎯 EdJourney Demo：一款AI驱动的美本升学规划工具",
         "content": "Demo演示EdJourney的操作使用，以及这款工具及平台资源在升学规划中实际应用场景。",
-        "url": "/data/media/college_app_factors.jpg",
-        "type": "image"
+        "url": "https://www.youtube.com/watch?v=ttay5c11S6s",
+        "type": "youtube"
     },
     {
         "id": 5,
@@ -41,7 +41,7 @@
         "category": "升学工具",
         "title": "🎯 美本申请要素权重表",
         "content": "一张图看透美本录取底层逻辑：招生官到底在看什么？成绩、标化、活动、文书，到底各占几成？规划不是面面俱到，而是有的放矢。这张权重分布图帮大家理清思路，看看自己最该补足的短板在哪里。",
-        "url": "https://www.youtube.com/watch?v=ttay5c11S6s",
-        "type": "youtube"
+        "url": "/data/media/college_app_factors.jpg",
+        "type": "image"
     }
 ]
